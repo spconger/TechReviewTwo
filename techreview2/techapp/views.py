@@ -17,4 +17,3 @@ def productdetail(request, id):
     detail=get_object_or_404(Product, pk=id)
     context = { 'detail': detail}
     return render (request, 'techapp/details.html',context=context )
-
